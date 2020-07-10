@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eflair Online</title>
+    <link rel='shortcut icon' href='assets/images/favicon.png' type='image/x-icon' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/OwlCarousel2/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.carousel-1.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <!-- ======================================
+    HEADER
+    ======================================= -->
+    <header class="siteheader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="logo">
+                        <a href="javascript:;">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="topsearch">
+                        <form action="">
+                            <select name="term" id="selectcategory" class="select-category">
+                                <option value="">All categories</option>
+                                <option value="aata-and-sooji">Aata And Sooji</option>
+                                <option value="all-cleaners">All Cleaners</option>
+                                <option value="baby-care">Baby Care</option>
+                                <option value="bath-and-hand-wash">Bath And Hand Wash</option>
+                                <option value="biscuits-and-cookies">Biscuits And Cookies</option>
+                                <option value="breakfast-cereals">Breakfast Cereals</option>
+                                <option value="coffee-tea">Coffee &amp; Tea</option>
+                            </select>
+                            <div class="searchajax">
+                                <input type="text" value="" name="s" id="searrchinput" placeholder="Search..." autocomplete="off">
+                                <button type="submit" class="search-button">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="topcart">
+                        <ul class="topshopcart">
+                            <li>
+                                <a href="javascript:;" class="carticon">
+                                    <div class="total-cart">0</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="dropicon">
+                                    <div class="droplist">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="menuwrap">
+                        <ul class="mainmenu">
+                            <li><a href="javascript:;">Home</a></li>
+                            <li><a href="javascript:;">About Us</a></li>
+                            <li><a href="javascript:;">Shop</a></li>
+                            <li><a href="javascript:;">Vendor</a></li>
+                            <li><a href="javascript:;">Services</a></li>
+                            <li><a href="javascript:;">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================================
+    Homepage Banner
+    ======================================= -->
+    <section class="homebanner" style="background-image: url('assets/images/banner2.jpg');">
+        <div class="bannercontent">
+            <h2>Save upto 40% off</h2>
+            <h4>fresh fruit solids</h4>
+            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+            <a href="javascript:;" class="btnshop">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- ======================================
+    Featured Boxes
+    ======================================= -->
+    <section class="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="fbox">
+                        <img src="assets/images/bread.jpg" alt="category">
+                        <div class="finfo">
+                            <h3>Fresh Bread</h3>
+                            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                            <a href="javascript:;" class="btnshop">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="fbox">
+                        <img src="assets/images/cookies.jpg" alt="category">
+                        <div class="finfo">
+                            <h3>Biscuits and Cookies</h3>
+                            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                            <a href="javascript:;" class="btnshop">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="fbox">
+                        <img src="assets/images/aata.jpg" alt="category">
+                        <div class="finfo">
+                            <h3>Aata and Sooji</h3>
+                            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                            <a href="javascript:;" class="btnshop">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================
+    Featured Products
+    ======================================= -->
+    <section class="featuredProduct">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sectiontitle">
+                        <h2>Featured Products</h2>
+                        <div class="sub">Best Products On Sale.</div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme featuredpro">
+                        <div class="item">
+                            <div class="probox">
+                                <a href="javascript:;">
+                                    <div class="proinfo">                                
+                                        <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                        <div class="prometa">
+                                            <div class="price">
+                                                <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <div class="metalinks">
+                                            <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="assets/images/cookies.jpg" alt="product">
+                                        <span class="sale">sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="probox">
+                                <a href="javascript:;">
+                                    <div class="proinfo">                                
+                                        <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                        <div class="prometa">
+                                            <div class="price">
+                                                <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <div class="metalinks">
+                                            <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="assets/images/aata.jpg" alt="product">
+                                        <span class="sale">sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="probox">
+                                <a href="javascript:;">
+                                    <div class="proinfo">                                
+                                        <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                        <div class="prometa">
+                                            <div class="price">
+                                                <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <div class="metalinks">
+                                            <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="assets/images/bread.jpg" alt="product">
+                                        <span class="sale">sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /owl-carousel -->
+                </div>               
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </section>
+
+
+    <!-- ======================================
+    Top Selling Products
+    ======================================= -->
+    <section class="featuredProduct topSelling">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sectiontitle">
+                        <h2>Top Seling Products</h2>
+                        <div class="sub">Top Selling Products are On Sale.</div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme featuredpro">
+                        <div class="item">
+                            <div class="probox">
+                                <a href="javascript:;">
+                                    <div class="proinfo">                                
+                                        <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                        <div class="prometa">
+                                            <div class="price">
+                                                <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <div class="metalinks">
+                                            <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="assets/images/cookies.jpg" alt="product">
+                                        <span class="sale">sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="probox">
+                                <a href="javascript:;">
+                                    <div class="proinfo">                                
+                                        <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                        <div class="prometa">
+                                            <div class="price">
+                                                <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <div class="metalinks">
+                                            <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="assets/images/aata.jpg" alt="product">
+                                        <span class="sale">sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="probox">
+                                <a href="javascript:;">
+                                    <div class="proinfo">                                
+                                        <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                        <div class="prometa">
+                                            <div class="price">
+                                                <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                            </div>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <div class="metalinks">
+                                            <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                            <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="assets/images/bread.jpg" alt="product">
+                                        <span class="sale">sale</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /owl-carousel -->
+                </div>               
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </section>
+
+
+    <!-- ======================================
+    OUR TESTIMONIALS 
+    ======================================= -->
+    <section class="testimonails" style="background-image: url('assets/images/banner4-1.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sectiontitle">
+                        <h2>Our Testimonials</h2>
+                        <div class="sub">What our client says about us!</div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+    
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                    <div class="owl-carousel owl-theme testimonailslider">
+                        <div class="item">
+                            <div class="tinfo">
+                                <div class="tbox">
+                                    <div class="icomma"><i class="fa fa-quote-left"></i></div>
+                                    <div class="text"> WOW! Couldn't have been possible without Eflair. Amidst these tough pandemic lock-down times, kudos to Eflair for delivering essential goods straight to our homes, so that we can continue to stay home and safe! quickest delivery with best prices & offers along with so many choices of stores to choose from. thank you Eflair for helping me fight this lock-down from my home!</div>
+                                    <div class="space"></div>
+                                </div>
+                                <div class="tuserinfo">
+                                    <div class="avatar">
+                                        <img src="assets/images/UditVarshney.jpg" alt="">
+                                    </div>
+                                    <h4>Dr.Udit Varshney</h4>
+                                    <em></em>
+                                    <div class="trating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="tinfo">
+                                <div class="tbox">
+                                    <div class="icomma"><i class="fa fa-quote-left"></i></div>
+                                    <div class="text"> In this time of multiple task at hand with limited time, Eflair is the perfect blend of support as well as solution to all the household problems. Thankful to this platform for making the work much easy. </div>
+                                    <div class="space"></div>
+                                </div>
+                                <div class="tuserinfo">
+                                    <div class="avatar">
+                                        <img src="assets/images/AkshitaSinghvi.png" alt="">
+                                    </div>
+                                    <h4>Akshita Singhvi</h4>
+                                    <em></em>
+                                    <div class="trating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="tinfo">
+                                <div class="tbox">
+                                    <div class="icomma"><i class="fa fa-quote-left"></i></div>
+                                    <div class="text"> We realized that coming to Eflair for effective product entry solutions was not at all a bad choice. In fact it was a "worthy products" towards the path leading to our business growth. We recommend their Big Commerce Product Entry!</div>
+                                    <div class="space"></div>
+                                </div>
+                                <div class="tuserinfo">
+                                    <div class="avatar">
+                                        <img src="assets/images/AyushiJagetiya-300x300.png" alt="">
+                                    </div>
+                                    <h4>Ayushi Jagetiya</h4>
+                                    <em></em>
+                                    <div class="trating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="tinfo">
+                                <div class="tbox">
+                                    <div class="icomma"><i class="fa fa-quote-left"></i></div>
+                                    <div class="text">We as customer were searching for unique level of service by providing an innovative web based ecommerce platform, where the products can be purchased directly from our own town shops and products are delivered the same day, Eflair have delivered a solution that does exactly what we were looking for.</div>
+                                    <div class="space"></div>
+                                </div>
+                                <div class="tuserinfo">
+                                    <div class="avatar">
+                                        <img src="assets/images/AliYawar-150x150.jpg" alt="">
+                                    </div>
+                                    <h4>Dr. Ali Yawar</h4>
+                                    <em></em>
+                                    <div class="trating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+                    </div>
+                    <!-- /owl-carousel -->
+
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </section>
+
+
+    <!-- ======================================
+    Client Logo
+    ======================================= -->
+    <section class="clientlogo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme clientslider">
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br6.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================
+    Footer
+    ======================================= -->
+    <footer class="footer">
+        <div class="container fborder">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="footerbox">
+                        <h3>STORE INFORMATION</h3>
+                    </div>
+                </div>
+
+                 <div class="col-sm-3">
+                    <div class="footerbox">
+                        <h3>MY ACCOUNT</h3>
+                    </div>
+                </div>
+
+                 <div class="col-sm-3">
+                    <div class="footerbox">
+                        <h3>INFORMATION</h3>
+                    </div>
+                </div>
+
+                 <div class="col-sm-3">
+                    <div class="footerbox">
+                        <h3>OPENING HOURS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+
+</body>
+</html>
+
+<script>
+    $(document).ready(function() {
+        $('.featuredpro').owlCarousel({
+            loop:true,
+            margin:15,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+
+        $('.testimonailslider').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+
+
+         $('.clientslider').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        })
+
+
+    })
+</script>
