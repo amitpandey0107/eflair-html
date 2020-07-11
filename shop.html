@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eflair Online</title>
+    <link rel='shortcut icon' href='assets/images/favicon.png' type='image/x-icon' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/OwlCarousel2/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.carousel-1.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <!-- ======================================
+    HEADER
+    ======================================= -->
+    <header class="siteheader innerheader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="menuwrap">
+                        <ul class="mainmenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="hasChild">
+                                <a href="shop.html">Shop</a>
+                                <ul class="dropdown">
+                                    <li><a href="javascript:;">Cookies</a></li>
+                                    <li><a href="javascript:;">Bread</a></li>
+                                    <li><a href="javascript:;">Flours</a></li>
+                                    <li><a href="javascript:;">Pulses</a></li>
+                                    <li><a href="javascript:;">Grains</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="vendor.html">Vendor</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="topcart">
+                        <ul class="topshopcart">
+                            <li>
+                                <a href="javascript:;" class="carticon">
+                                    <div class="total-cart">0</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="dropicon">
+                                    <div class="droplist">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-list">
+                                    <li><a href="javascript:">
+                                        <i class="fa fa-heart"></i> Wishlist (0)
+                                    </a></li>
+                                    <li><a href="javascript:;">Login / Signup</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!--  <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="menuwrap">
+                        <ul class="mainmenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="hasChild">
+                                <a href="shop.html">Shop</a>
+                                <ul class="dropdown">
+                                    <li><a href="javascript:;">Cookies</a></li>
+                                    <li><a href="javascript:;">Bread</a></li>
+                                    <li><a href="javascript:;">Flours</a></li>
+                                    <li><a href="javascript:;">Pulses</a></li>
+                                    <li><a href="javascript:;">Grains</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="vendor.html">Vendor</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </header>
+
+    <!-- ======================================
+    Page Banner
+    ======================================= -->
+    <section class="pagebanner" style="background-image: url('assets/images/banner2.jpg');">
+        <div class="bannercontent">
+            <ul class="pagebreadcomb">
+                <li><a href="index.html">Home</a></li>
+                <li>Shop</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==================================
+    SHOP CONTENT
+    ================================== -->
+    <section class="shopcontent">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-sm-3">
+                    <div class="prosidebar">
+
+                        <div class="sidebarwidget">
+                            <h3>Price</h3>
+                            <form action="">
+                                <input type="range" id="vol" name="vol" min="0" max="50000" class="pricerange">
+                                <input type="submit" class="pricebtn">
+                                <label for="" class="lblprice"><strong>Price</strong>: ₹0 — ₹8,000</label>
+                            </form>
+                        </div>
+
+                        <div class="sidebarwidget">
+                            <h3>Product Category</h3>
+                            <ul>
+                                <li><a href="javascript:;">Aata And Sooji </a></li>
+                                <li><a href="javascript:;">All Cleaner</a></li>
+                                <li><a href="javascript:;">Baby Care</a></li>
+                                <li><a href="javascript:;">Bins And Bathroom Ware</a></li>
+                                <li><a href="javascript:;">Bath and handwash</a></li>
+                                <li><a href="javascript:;">Biscuts and cookiws</a></li>
+                                <li><a href="javascript:;">Bread and buns</a></li>
+                                <li><a href="javascript:;">Breakfast</a></li>
+                                <li><a href="javascript:;">Tea and Coffee</a></li>
+                                <li><a href="javascript:;">Dairy</a></li>
+                                <li><a href="javascript:;">Dals and pulses</a></li>
+                                <li><a href="javascript:;">Freshners</a></li>
+                                <li><a href="javascript:;">Makeup</a></li>
+                                <li><a href="javascript:;">Masala & spices</a></li>
+                                <li><a href="javascript:;">Pet food</a></li>
+                                <li><a href="javascript:;">Skin Care</a></li>
+                                <li><a href="javascript:;">Stationery</a></li>
+                                <li><a href="javascript:;">Steel Utensils</a></li>
+                                <li><a href="javascript:;">Storage Accessories</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebarwidget mrginbotnone">
+                            <h3>Tags</h3>
+                            <div class="tagcloud">
+                                <a href="javascript:;">Grocery</a>
+                                <a href="javascript:;">Mens</a>
+                                <a href="javascript:;">Pet</a>
+                                <a href="javascript:;">Steel</a>
+                                <a href="javascript:;">Makeup</a>
+                                <a href="javascript:;">Dals</a>
+                                <a href="javascript:;">Pulses</a>
+                                <a href="javascript:;">Tea</a>
+                                <a href="javascript:;">Bread</a>
+                                <a href="javascript:;">Grocery</a>
+                                <a href="javascript:;">Mens</a>
+                                <a href="javascript:;">Pet</a>
+                                <a href="javascript:;">Steel</a>
+                                <a href="javascript:;">Makeup</a>
+                                <a href="javascript:;">Dals</a>                                
+                                <a href="javascript:;">Tea</a>
+                                <a href="javascript:;">Pulses</a>
+                                <a href="javascript:;">Bread</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-9">
+                    <div class="shopfilter">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="viewlist">
+                                    <a href="javascript:;" class="gridview active">
+                                        <i class="fa fa-th"></i>
+                                    </a>
+                                    <a href="javascript:;" class="listview">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="showingpro">Showing 1–27 of 3190 results</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="sortpro">
+                                    <select name="" id="">
+                                        <option value="">Default Sorting</option>
+                                        <option value="">Sort by popularity</option>
+                                        <option value="">Sort by average rating</option>
+                                        <option value="">Sort by latest</option>
+                                        <option value="">Sort by price: low to high</option>
+                                        <option value="">Sort by price: high to low</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /shopfilter -->
+
+                    <div class="products">
+                        <div class="row">
+
+                            <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                             <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                             <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                             <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="probox">
+                                    <a href="javascript:;">
+                                        <div class="proinfo">                                
+                                            <h4>The Man Company Aloe Vera & Neem gel</h4>
+                                            <div class="prometa">
+                                                <div class="price">
+                                                    <span class="discounted"> <i class="fa fa-inr"></i>250 </span>
+                                                    <span class="sellprice"> <i class="fa fa-inr"></i>200 </span>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="metalinks">
+                                                <a href="javascript:;" class="icon"><i class="fa fa-shopping-cart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-heart"></i></a>
+                                                <a href="javascript:;" class="icon"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="assets/images/cookies.jpg" alt="product">
+                                            <span class="sale">sale</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /products -->
+
+                    <div class="paginationwrap">
+                        <ul class="paginationlist">
+                            <li><a href="javascript:;"><i class="fa fa-angle-double-left"></i> Prev</a></li>
+                            <li><span class="initial">1</span></li>
+                            <li><a href="javascript:;">2</a></li>
+                            <li><a href="javascript:;">3</a></li>
+                            <li><a href="javascript:;">4</a></li>
+                            <li><span class="dots">...</span></li>
+                            <li><a href="javascript:;">117</a></li>
+                            <li><a href="javascript:;">118</a></li>
+                            <li><a href="javascript:;">119</a></li>
+                            <li><a href="javascript:;">Next <i class="fa fa-angle-double-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /paginationwrap -->
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================
+    Client Logo
+    ======================================= -->
+    <section class="clientlogo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme clientslider">
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript">
+                                <img src="assets/images/br6.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================
+    Footer
+    ======================================= -->
+    <footer class="footer">
+        <div class="container fborder">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="footerbox">
+                        <h3>STORE INFORMATION</h3>
+                        <div class="footeraddress">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-home"></i>
+                                    <span>Navkar Departmental Store, Udaipur</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <a href="tel:+919845764125">(+91) 9845-7641-25</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="mailto:navkar123@gmail.com">navkar123@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-sm-3">
+                    <div class="footerbox">
+                        <h3>INFORMATION</h3>
+                        <ul class="footerlist">
+                            <li><a href="javascript:;">About Us</a> </li>
+                            <li><a href="javascript:;">Shop</a> </li>
+                            <li><a href="javascript:;">Vendor</a> </li>
+                            <li><a href="javascript:;">Privacy Policy</a> </li>
+                            <li><a href="javascript:;">Terms & Condition</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="col-sm-3">
+                    <div class="footerbox">
+                        <h3>MY ACCOUNT</h3>
+                        <ul class="footerlist">
+                            <li><a href="javascript:;">Login & Register</a> </li>
+                            <li><a href="javascript:;">My Cart</a> </li>
+                            <li><a href="javascript:;">My Wishlist</a> </li>
+                            <li><a href="javascript:;">My Compare</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="col-sm-3">
+                    <div class="footerbox">
+                        <h3>OPENING HOURS</h3>
+                        <div class="openhours">
+                            <p><strong>Working days:</strong> Mon to Fri</p>
+                            <p><strong>Working hours:</strong> 9.00AM - 9.00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="copytxt">Copyright © 2020. All rights reserved.</div>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="sociallist">
+                        <li>
+                            <a href="javascript:;" class="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+</body>
+</html>
