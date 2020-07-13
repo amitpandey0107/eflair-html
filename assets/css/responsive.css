@@ -1,244 +1,210 @@
 @media only screen and  (min-width: 1200px) {
 	
 }
+@media only screen and  (max-width: 1200px) {
+    .siteheader .topsearch {
+        border: 1px solid #ebebeb;
+        border-radius: 25px;
+        margin: 0 auto;
+        margin-top: 0;
+    }
 
-@media only screen and (max-width: 991px) {	
-	.topOffer .offerbox {
-        margin-bottom: 30px;
+    .siteheader .topsearch select {
+        border: 0;
+        border-radius: 0px;
+        padding-left: 0;
+        width: 28%;
+        font-size: 14px;
+        display: inline-block !important;
     }
-    .topOffer .offerbox.lastOfferBox {
-        margin-bottom: 0;
+
+    .siteheader .topsearch .searchajax {
+        display: inline-block;
+        width: 70%;
     }
-    .footerBlock {
-        margin-bottom: 40px;
-    }    
-    .projectContent .proBlock .blockImage img {
+    .siteheader .topsearch input[type="text"] {
+        width: 240px;
+        min-width: auto;
+    }
+    .ourteam .teambox .imgthumbnail {
+        width: 200px;
         height: 200px;
     }
-    .projectContent .proBlock .proName {
-        font-size: 18px;
+    .shopcontent .shopfilter .sortpro select {
+        width: 100%;
     }
-    .projectBanner .bannerContent {
+
+
+}
+
+@media only screen and (max-width: 991px) {	
+	.featured .fbox {
+        margin-bottom: 30px;
+    }
+    .footer .footerbox {
+        margin-bottom: 30px;
+    }
+    .testimonails .tbox {
         width: 85%;
     }
-    .projectBanner .bannerContent h2 {
-        font-size: 36px;
-    }
-    .projectBanner .bannerContent p {
-        font-size: 15px;
-    }
-    .fullMenu {
+    .topsearch, .mdn {
         display: none;
-        background-color: #3e516a;
+    }
+    .homebanner .bannercontent {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .ourteam .teambox {
+        margin-bottom: 40px;
+    }
+    .contactwrap .contactinfo {
+        padding-left: 30px;
+    }
+    .contactform {
+        margin-bottom: 40px;
+    }
+    .shopcontent .shopfilter .sortpro select {
+        width: 100%;
+    }
+
+    .ddn{
+        display: block;
+    }
+    .siteheader, 
+    .innerheader {
+        position: relative;
+        padding: 10px 0 10px 0 !important;
+    }
+    .menuwrap,
+    .innerheader .menuwrap{
+        margin: 0;
+        border: 0;
+        text-align: left;
         width: 40%;
         position: fixed;
         z-index: 99;
         height: 100vh;
         top: 0;
-        right: 0;
-        padding: 30px;
-    }
-    .mobileMenu {
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 18px;
-    }
-    .mainHeader {
-        padding: 10px 0;
-    }
-    .mainHeader .logo img {
-        width: auto;
-        height: 79px;
-    }
-    .mainHeader .logo {
-        display: inline-block;
-    }
-    .iconWrap {
+        left: 0;
+        padding: 20px;
+        background: #212121;
         display: none;
     }
-    .fullMenu .mainMenu {
-        padding-top: 60px;
-    }
-    .fullMenu .mainMenu li {
+    .menuwrap .mainmenu li {
         display: block;
-        margin-left: 0;
+        position: relative;
+        padding: 7px 0;
     }
-    .fullMenu .mainMenu .sub-menu {
-        display: none;
-    }
-    .fullMenu .mainMenu li:hover > .sub-menu {
-        opacity: 0;
-        visibility: hidden;
-        display: none;
-    }
-    .fullMenu .mainMenu li a {
-        color: #ffffff;
-        font-size: 22px;
-        text-transform: capitalize;
-        font-weight: 500;
-        padding: 10px 0;
-    }
-    .fullMenu .mainMenu li a:hover {
-        color: #000000;
-    }
-    .mainMenu li.hasChild > a:after {
-        display: none;
-    }
-    .sideMenuIcon {
-        height: 45px;
-        width: 45px;
-        padding: 5px;
+     .menuwrap .mainmenu li a{
+        color: #EA7127;
+     }
+     .closeme {
         display: inline-block;
-        cursor: pointer;
-        position: absolute;
-        right: 5px;
-        top: 15px;
-        z-index: 9;
+     }
+     .menuwrap .mainmenu {
+        padding: 0;
+        margin: 30px 0 0px 0;
     }
-    .sideMenuIcon span {
-        background-color: #ffffff;   
+    .menuwrap .mainmenu ul{
+        display: none;
+    }
+    .menuwrap .mainmenu li.hasChild:hover > ul {
+        display: none;
+    }
+    .menuwrap .dropdown {
         display: block;
-        height: 5px;
-        margin: 5px 0;
-        border-radius: 3px;
+        position: relative;
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+    }
+    .menuwrap .mainmenu li.hasChild {
+        padding: 0 40px 0 0px;
         position: relative;
     }
-    .sideMenuIcon span:nth-child(1) {
-        transform: rotate(45deg);
+    .toggleSubMenu {
+        display: inline-block;
+        color: #EA7127;
+        top: 0;
+        position: absolute;
+        right: 0;
+        height: 23px;
+        width: 23px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 9;
     }
-    .sideMenuIcon span:nth-child(2) {
-        transform: rotate(-45deg);
-        top: -10px;
-        left: 0px;
+    .menuwrap .dropdown li {
+        padding: 0;
     }
+    .innerheader .innermenumain{
+        display: block;
+    }
+    .siteheader .logo img {
+        height: auto;
+        width: 100%;
+    }
+
+    .pagebanner:after {
+        content: '';
+        background: rgba(0,0,0,0.5);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .pagebanner .bannercontent {
+        z-index: 9;
+        width: 100%;
+        text-align: center;
+    }
+
+
+ 
 }
 
 
 @media only screen and (max-width: 771px) {
-    .boxcont {
-        padding: 15px;
+   .homebanner .bannercontent h2 {
+    margin-bottom: 15px;
+    font-size: 36px;
+   }
+   .contactwrap .contactinfo {
+       padding-left: 0px;
     }
-    .topOffer .offerbox {
-        margin-bottom: 15px;
-    }
-    .newArrival .arrivalBox .proimage {
-        height: 220px;     
-    }
-    .newArrival .arrivalBox h4, .proPrice, .btncart {     
-        font-size: 15px;
-    }
-    .footerBlock.lsatfooterBlock {
-        margin-bottom: 0;
-    }
-    .footer .footerTitle {
-        margin-bottom: 25px;
-    }
-    .footer .footerList li a {
-        padding: 4px 0;
-    }
-    .footer .footerContact {
-        margin-bottom: 12px;
-    }
-    .footer {
-        padding: 40px 0;
-    }
-    .ourProjects .projectBox .proImage {
-        height: 210px;
-    }
-    .ourProjects .projectBox p {
-        font-size: 15px;
-    }
-    .infoBanenr .infoImage {
-        margin-bottom: 20px;
-    }
-    .infoBanenr .infoImage.lastinfoImage {
-        margin-bottom: 0;
-    }
-    .spBannerContent {
-        width: 70%;
-        padding: 0 15px;
-    }
-    .spBannerContent h2 {
-        font-size: 32px;
-    }
-    .spBannerContent p {
-        font-size: 15px;
-    }
-    .spBContainer .projectThumbnail {
-        height: 200px;
-    }
-    .fullMenu {
+    .menuwrap,
+    .innerheader .menuwrap {
         width: 55%;
     }
-    
+    .mobilemenu {
+        top: 10px;
+    }
+    .siteheader .topcart {
+        margin-top: 10px;
+    }
+
     
 }
 
 
 @media only screen and (max-width: 551px) {
-    .newArrival .arrivalBox .proimage {
-        height: 300px;
+    .sociallist {
+        text-align: center;
+        margin-top: 15px;
     }
-    .infoBanenr .offerContent h3 {
-        font-size: 28px;
-    }
-    .topOffer .offerContent h3 {
-        font-size: 28px;
-    }
-    .infoBanenr .offerContent .info {
-        font-size: 15px;
-        width: 100%;
-    }
-    .title h2 {
-        font-size: 36px;
-        position: relative;
-    }
-    .title h2:after {
-        content: '';
-        background-color: #3e516a;
-        height: 2px;
-        position: absolute;
-        left: 0;
-        bottom: -9px;
-        width: 100px;
-    }
-    .footer .footerList li a, 
-    .abtInfo , 
-    .footer .footerContact span{
-        font-size: 14px;
-    }
-    .footer .footerTitle {
-        font-size: 24px;
-    }
-    .footer .footerTitle:after {
-        width: 60px;
-    }
-    .footer .footerLogo {
+    .copyright .copytxt {
         text-align: center;
     }
-    .projectBanner {
-        height: 450px;
-    }
-    .projectBanner .bannerContent h2 {
-        font-size: 33px;
-        margin-bottom: 20px;
-    }
-    .projectBanner .bannerContent, 
-    .spBannerContent {
+    .testimonails .tbox {
         width: 100%;
-        padding: 0 15px;
     }
-    .spBannerContent h2 {
-        font-size: 28px;
+    .topsearch {
+        display: none;
     }
-    .spBannerContent p {
-        font-size: 14px;
-    }
-    .spBContainer .projectThumbnail {
-        height: 180px;
-    }
-    .fullMenu {
+    .menuwrap,
+    .innerheader .menuwrap {
         width: 65%;
     }
 }

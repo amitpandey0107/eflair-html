@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
@@ -32,17 +33,24 @@
     <!-- ======================================
     HEADER
     ======================================= -->
-     <header class="siteheader innerheader">
+   <header class="siteheader innerheader">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-4 col-sm-4 col-md-4 ddn">
+                    <button class="mobilemenu" id="mobilemenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="col-4 col-sm-4 col-sm-4 col-lg-3">
                     <div class="logo">
                         <a href="index.html">
                             <img src="assets/images/logo.png" alt="logo">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-12 col-sm-7 mdn">
                     <div class="menuwrap">
                         <ul class="mainmenu">
                             <li><a href="index.html">Home</a></li>
@@ -63,7 +71,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-2">
                     <div class="topcart">
                         <ul class="topshopcart">
                             <li>
@@ -86,6 +94,33 @@
                                     <li><a href="javascript:;">Login / Signup</a></li>
                                 </ul>
                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container innermenumain">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="menuwrap">
+                        <button class="closeme" id="closeme"><i class="fa fa-close"></i></button>
+                        <ul class="mainmenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="hasChild">
+                                <a href="shop.html">Shop</a>
+                                <ul class="dropdown">
+                                    <li><a href="javascript:;">Cookies</a></li>
+                                    <li><a href="javascript:;">Bread</a></li>
+                                    <li><a href="javascript:;">Flours</a></li>
+                                    <li><a href="javascript:;">Pulses</a></li>
+                                    <li><a href="javascript:;">Grains</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="vendor.html">Vendor</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -122,7 +157,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="contactform">
                         <form action="">
                             <div class="form-group">
@@ -152,7 +187,7 @@
                     </div>
                 </div>  
 
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="contactinfo">
                         <div class="contactcard">
                             <i class="fa fa-map-marker"></i>
@@ -235,10 +270,13 @@
     <!-- ======================================
     Footer
     ======================================= -->
+    <!-- ======================================
+    Footer
+    ======================================= -->
     <footer class="footer">
         <div class="container fborder">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="footerbox">
                         <h3>STORE INFORMATION</h3>
                         <div class="footeraddress">
@@ -260,7 +298,7 @@
                     </div>
                 </div>
 
-                 <div class="col-sm-3">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="footerbox">
                         <h3>INFORMATION</h3>
                         <ul class="footerlist">
@@ -273,7 +311,7 @@
                     </div>
                 </div>
 
-                 <div class="col-sm-3">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="footerbox">
                         <h3>MY ACCOUNT</h3>
                         <ul class="footerlist">
@@ -285,7 +323,7 @@
                     </div>
                 </div>
 
-                 <div class="col-sm-3">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="footerbox">
                         <h3>OPENING HOURS</h3>
                         <div class="openhours">
