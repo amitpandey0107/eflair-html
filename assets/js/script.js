@@ -156,4 +156,18 @@ $(document).ready(function () {
 
 $("section").addClass("wow fadeIn");
 
+
+
+	$('#vlistview').on('click', function() {
+		$('.allvendor .gridclass').addClass('fullcol');
+		$('#vgridview').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('#vgridview').on('click', function() {
+		$('.allvendor .gridclass').removeClass('fullcol');
+		$('#vlistview').removeClass('active');
+		$(this).addClass('active');
+	})
+
+
 })

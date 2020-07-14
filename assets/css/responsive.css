@@ -33,7 +33,15 @@
     .shopcontent .shopfilter .sortpro select {
         width: 100%;
     }
-
+    .filterfield .formcontrol {
+        width: 33%;
+        margin-bottom: 5px;
+    }
+    .btnfsubmit {
+        width: 33%;   
+        margin-left: 0;
+        margin-right: 0;
+    }
 
 }
 
@@ -160,7 +168,15 @@
         width: 100%;
         text-align: center;
     }
-
+    .filterfield .formcontrol {
+        width: 32%;
+        margin-bottom: 5px;
+    }
+     .btnfsubmit {
+        width: 32%;   
+        margin-left: 0;
+        margin-right: 0;
+    }
 
  
 }
@@ -183,6 +199,21 @@
     }
     .siteheader .topcart {
         margin-top: 10px;
+    }
+    .vendorcontent .filterright {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        margin-top: 12px;
+    }
+    .filterfield .formcontrol {
+        width: 49%;
+        margin-bottom: 5px;
+    }
+     .btnfsubmit {
+        width: 49%;   
+        margin-left: 0;
+        margin-right: 0;
     }
 
     

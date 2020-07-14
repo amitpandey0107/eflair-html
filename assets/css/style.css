@@ -28,9 +28,7 @@ footer {
     outline: none;
 }
 body{
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Jost', sans-serif;*/
-    /*font-family: 'Fira Code', monospace;*/
+    font-family: 'Roboto', sans-serif;   
     font-family: 'Source Sans Pro', sans-serif;
 }
 @media (min-width: 1200px){
@@ -1314,7 +1312,50 @@ Vendor Content
 .allvendor .paginationwrap{
     margin-bottom: 40px;
 }
+.vendorcontent .filterright {
+    position: relative;
+    width: 70%;
+    text-align: right;
+}
+.vendorcontent .filterright .sortby {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    margin-right: 31px;
+}
+.vendorcontent .filterright .sortby select {
+    height: 38px;
+    margin-left: 10px;
+    width: 142px;
+}
+.vendorcontent .filterright .views {
+    display: inline-block;
+}
+.vendorcontent .filterright .views button{
+    color: #212121;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
 
+.vendorcontent .filterright .views button.active{
+    color: #EA7127;
+}
+.allvendor .fullcol {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.allvendor .fullcol .vendorcard .imgwrp {
+    height: 185px;
+}
+.allvendor .fullcol .vendorinfo {
+    top: 36%;
+}
 /*====================
 Services
 =====================*/
@@ -1495,4 +1536,112 @@ Contact Us
 }
 .innerheader .innermenumain{
     display: none;
+}
+
+
+/*================
+Vendor Details
+================*/
+.vendordetails {
+    position: relative;
+    margin-bottom: 50px;
+}
+.vendordetails .bgimage{
+    position: relative;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 350px;
+}
+.vendordetails .bgimage:after {
+    content: '';
+    background: rgba(255,255,255,0.25);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.vendordetails .vendorinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -43px;
+    z-index: 999;
+    position: relative;
+}
+.vendordetails .vendorinfo .avaitar {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 25px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+.vendordetails .vendorinfo .avaitar img{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.vendordetails .vdeails {
+    display: inline-block;
+
+}
+.vendordetails  .vdeails a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+
+}
+.vendordetails  .vdeails h4{
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.vendordetails  .vdeails .address{
+    margin-bottom: 8px;
+}
+.vendordetails  .vdeails .address i.fa {
+    margin-right: 5px;
+}
+.filtervendorfilter {
+    margin-top: 15px;
+}
+.filterfield {
+    width: 100%;
+}
+.filterfield .formcontrol{
+    height: 40px;
+    display: inline-block;
+    width: 17%;
+}
+.btnfsubmit {
+    top: 0;
+    line-height: 40px;
+    width: 105px;
+    margin: 5px;
+    color: #fff !important;
+    font-size: 14px;
+    background-color: #EA7127;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -moz-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -ms-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -o-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+}
+.btnfsubmit:hover {
+        background-color: #282828;
+    transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -moz-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -ms-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition: all .25s cubic-bezier(.455,.03,.515,.955);
+    -o-transition: all .25s cubic-bezier(.455,.03,.515,.955);
 }
